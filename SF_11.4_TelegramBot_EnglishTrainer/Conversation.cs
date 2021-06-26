@@ -12,6 +12,8 @@ namespace SF_11._4_TelegramBot_EnglishTrainer
 
         private List<Message> telegramMessages;
 
+        public Dictionary<string,Word> Dictionary; //----------------
+
 
         public Conversation (Chat chat)
         {
@@ -41,6 +43,13 @@ namespace SF_11._4_TelegramBot_EnglishTrainer
             }
             return textMessages;
         }
+
+
+        public long GetId() => telegramChat.Id;
+
+
+        public string GetLastMessage() => telegramMessages[^1].Text;
+
 
     }
 }

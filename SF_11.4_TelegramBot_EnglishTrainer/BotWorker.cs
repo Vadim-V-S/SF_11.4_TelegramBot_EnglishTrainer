@@ -37,7 +37,7 @@ namespace SF_11._4_TelegramBot_EnglishTrainer
         {
             if (e.Message!=null)
             {
-                await logic.Responce();
+                //await logic.Response();
             }
         }
     }
